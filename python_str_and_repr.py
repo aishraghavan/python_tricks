@@ -32,11 +32,11 @@ Implement __str__ for classes which you think readability is more important of n
 """
 
 class ClassA(object):
-	def __init__(self, a=None):
-		self.a  = a
+    def __init__(self, a=None):
+        self.a  = a
 
-	def __repr__(self):
-		return '%s(%r)' % (self.__class__, self.a)
+    def __repr__(self):
+        return '%s(%r)' % (self.__class__, self.a)
 
 a = ClassA()
 print repr(a)
